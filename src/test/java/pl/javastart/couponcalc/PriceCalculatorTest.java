@@ -87,7 +87,6 @@ public class PriceCalculatorTest {
         products.add(new Product("Wiedźmin - gra na PC", 35.80, Category.ENTERTAINMENT));
         products.add(new Product("Nowe opony do samochodu", 350.00, Category.CAR));
 
-
         List<Coupon> coupons = new ArrayList<>();
         coupons.add(new Coupon(Category.FOOD, 25));
         coupons.add(new Coupon(Category.HOME, 15));
@@ -113,7 +112,6 @@ public class PriceCalculatorTest {
         products.add(new Product("Wiedźmin - gra na PC", 35.80, Category.ENTERTAINMENT));
         products.add(new Product("Remont samochodu", 15000.00, Category.CAR));
 
-
         List<Coupon> coupons = new ArrayList<>();
         coupons.add(new Coupon(Category.FOOD, 45));
         coupons.add(new Coupon(Category.HOME, 15));
@@ -125,6 +123,4 @@ public class PriceCalculatorTest {
         // then
         assertThat(result).isEqualTo(15070.65);
     }
-
-
 }
